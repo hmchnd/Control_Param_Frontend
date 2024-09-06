@@ -28,7 +28,7 @@
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="department"/>
-                            <PropertyValue Property="Label" String="Dept"/>
+                            <PropertyValue Property="Label" String="{@i18n>dept}"/>
                         </Record>
                     </Collection>
                 </Annotation>
@@ -40,6 +40,47 @@
                         <PropertyPath>process</PropertyPath>
                     </Collection>
                 </Annotation>
+                 <Annotation Term="UI.Facets">
+    <Collection>
+        <Record Type="UI.ReferenceFacet">
+            <PropertyValue Property="Label" String="{@i18n>generalInformation}"/>
+            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneralInfo"/>
+        </Record>
+    </Collection>
+</Annotation>
+
+<Annotation Term="UI.FieldGroup" Qualifier="GeneralInfo">
+    <Record>
+        <PropertyValue Property="Data">
+            <Collection>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="email"/>
+                    <PropertyValue Property="Label" String="{@i18n>Email}"/>
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="role"/>
+                    <PropertyValue Property="Label" String="{@i18n>Role}"/>
+                </Record>
+                 <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="process"/>
+                    <PropertyValue Property="Label" String="{@i18n>Process}"/>
+                </Record>
+                 <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="subProcess"/>
+                    <PropertyValue Property="Label" String="{@i18n>SubProcess}"/>
+                </Record>
+                 <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="department"/>
+                    <PropertyValue Property="Label" String="{@i18n>Department}"/>
+                </Record>
+                 <Record Type="UI.DataField">
+                    <PropertyValue Property="Value" Path="userid"/>
+                    <PropertyValue Property="Label" String="{@i18n>UserID}"/>
+                </Record>
+            </Collection>
+        </PropertyValue>
+    </Record>
+</Annotation>
             </Annotations>
         </Schema>
     </edmx:DataServices>

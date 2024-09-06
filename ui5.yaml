@@ -17,7 +17,7 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /odata
-            url: https://terralink-technologies-mena-dmcc-development-and-test-k53938716.cfapps.eu10-004.hana.ondemand.com
+            url: https://98aa08a0trial-dev-e-procurement-control-parameters-srv.cfapps.us10-001.hana.ondemand.com
             destination: E_PROCU_CNTRL_PARAM
     - name: fiori-tools-appreload
       afterMiddleware: compression

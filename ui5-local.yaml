@@ -27,7 +27,7 @@ server:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
           - path: /odata
-            url: https://terralink-technologies-mena-dmcc-development-and-test-k53938716.cfapps.eu10-004.hana.ondemand.com
+            url: https://98aa08a0trial-dev-e-procurement-control-parameters-srv.cfapps.us10-001.hana.ondemand.com
             destination: E_PROCU_CNTRL_PARAM
     - name: sap-fe-mockserver
       beforeMiddleware: csp
